@@ -12,10 +12,11 @@ const ProductForm = () => {
             myPrice,
             myDesc
         })
-            .then(res=>{
+            .then((res)=>{
                 console.log(res);
                 console.log(res.data);
-            )
+                setProduct([...good, res.data]);
+            })
             .catch(err=>console.log(err))
     }
     return (
@@ -32,6 +33,7 @@ const ProductForm = () => {
                 <label>Description</label>
                 <input type="text" onChange = {(e) => setMyDesc(e.target.value)}/>
             </p>
+            <input type="submit"/>
         </form>
     )
 }
