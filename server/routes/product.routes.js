@@ -5,4 +5,5 @@ module.exports = (app) => {
     app.post('/api/product', ProductController.createProduct);
     app.post('/api/product', ProductController.getAllProduct);
     app.get('/api/people/:id', ProductController.getProduct);
+    app.put('/api/people/:id', PersonController.updateProduct);
 }

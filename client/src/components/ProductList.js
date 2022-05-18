@@ -20,6 +20,7 @@ const ProductList = (props) => {
             {
                 product.map((good, index)=>{
                 return <p key={index}>{good.description}, {good.title}, {good.price}</p>
+
                 })
             }
         </div>
